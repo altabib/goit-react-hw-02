@@ -1,0 +1,17 @@
+.optionsButton{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.btnLi{
+    background-color:rgb(205, 199, 199);
+    color: rgb(47, 45, 45);
+    border-radius: 5px;
+    height: 15px;
+    min-height: 20px;
+    min-width: 90px;
+    cursor: pointer;
+    
+}
+
