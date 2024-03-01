@@ -2,7 +2,7 @@ import Description from "../Description/Description"
 import Feedback from "../Feedback/Feedback"
 import Options from "../Options/Options"
 import './App.css'
-import NoFeedback from "../NoFeedback/NoFeedback"
+import Notification from "../Notification/Notification"
 import { useState, useEffect } from "react"
 
 
@@ -30,10 +30,10 @@ function App() {
     });
   };
   
-  const updateFeedback = (clickType) => { 
-    console.log("click:", clickType);
+  const updateFeedback = (feedbackType) => { 
+    console.log("click:", feedbackType);
     setClicks((clicks) => ({
-      ...clicks, [clickType]: clicks[clickType] + 1,
+      ...clicks, [feedbackType]: clicks[feedbackType] + 1,
     }));
 };
 
@@ -51,7 +51,7 @@ function App() {
         totalFeedback={totalFeedback}
       />
       
-      {totalFeedback <= 0 ? <NoFeedback /> : <Feedback
+      {totalFeedback <= 0 ? <Notification /> : <Feedback
           good={clicks.good}
           neutral={clicks.neutral}
           bad={clicks.bad}

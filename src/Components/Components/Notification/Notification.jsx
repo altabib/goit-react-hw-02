@@ -1,4 +1,4 @@
-import css from "./NoFeedback.module.css"
+import css from "./Notification.module.css"
 
 const NoFeedback = () => {
     return <p className={css.noFeedback}>No feedback yet</p>;
